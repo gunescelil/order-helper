@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sp2016.cs310.com.orderhelper.MainActivity">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_Username_LoginPage"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="81dp"
+        android:hint="Username"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/et_Password_LoginPage"
+        android:layout_below="@+id/et_Username_LoginPage"
+        android:layout_marginTop="40dp"
+        android:hint="Password"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:id="@+id/login_button_LoginPage"
+        android:layout_marginTop="28dp"
+        android:onClick="login"
+        android:layout_below="@+id/user_type_spinner"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="First time? Register Here"
+        android:onClick="registerLink"
+        android:id="@+id/tv_register_link"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/login_button_LoginPage"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_type_spinner"
+        android:layout_below="@+id/et_Password_LoginPage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp"
+        android:spinnerMode="dialog" />
+
+</RelativeLayout>
